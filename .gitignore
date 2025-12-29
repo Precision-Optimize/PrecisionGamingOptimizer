@@ -1,0 +1,13 @@
+# Logs
+src/logs/*.log
+src/logs/*.tmp
+src/logs/*.bak
+src/logs/detect.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Optional tools binaries (keep folder)
+bin/*
+!bin/.gitkeep
