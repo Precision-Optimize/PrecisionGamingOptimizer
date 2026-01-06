@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.1] – Minor Stability Update
+### Improved
+- More reliable GPU auto-detection on systems with both iGPU and dGPU
+- Safer handling when FiveM or Fortnite is not installed
+- Cleaner console output with clearer detection summary
+- Minor script refactoring for readability and maintenance
+
+### Changed
+- No changes to optimization behavior
+- No new or aggressive tweaks introduced
+
+### Fixed
+- Prevented false warnings when game executables are missing
+
 ## [1.0.0] – 2025-12-29
 ### Added
 - Smart auto-detect (PowerShell → JSON) with tier classification (LOW/MID/HIGH)
