@@ -6,11 +6,10 @@ echo [FORTNITE] Applying Fortnite balanced tweaks...
 
 set "FN_EXE=%ProgramFiles%\Epic Games\Fortnite\FortniteGame\Binaries\Win64\FortniteClient-Win64-Shipping.exe"
 if not exist "%FN_EXE%" (
-  echo [FORTNITE] WARN: Fortnite exe not found at:
-  echo            %FN_EXE%
-  echo        If installed elsewhere, edit this script or add another path.
-  endlocal & exit /b 0
+  echo [FORTNITE] Fortnite not found – skipping profile.
+  exit /b 0
 )
+
 
 :: Disable Fullscreen Optimizations (per-app)
 reg add "HKCU\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers" ^

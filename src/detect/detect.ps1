@@ -9,16 +9,18 @@ $os = Get-CimInstance Win32_OperatingSystem
 $cpu = Get-CimInstance Win32_Processor | Select-Object -First 1
 $cs  = Get-CimInstance Win32_ComputerSystem
 
+# GPU detection (prefer highest VRAM adapter)
 $gpus = Get-CimInstance Win32_VideoController | ForEach-Object {
   [pscustomobject]@{
     Name   = $_.Name
     Vendor = if ($_.Name -match "NVIDIA") {"NVIDIA"} elseif ($_.Name -match "AMD|Radeon") {"AMD"} elseif ($_.Name -match "Intel") {"Intel"} else {"Unknown"}
-    VRAMGB = if ($_.AdapterRAM -gt 0) { BytesToGB($_.AdapterRAM) } else { 0 }
+    VRAMGB = if ($_.AdapterRAM -gt 0) { [math]::Round($_.AdapterRAM / 1GB, 2) } else { 0 }
     Driver = $_.DriverVersion
   }
 }
 
 $gpu = $gpus | Sort-Object VRAMGB -Descending | Select-Object -First 1
+
 
 $principal = New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())
 $isAdmin = $principal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)

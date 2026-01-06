@@ -6,9 +6,8 @@ echo [FIVEM] Applying FiveM balanced tweaks...
 
 set "FIVEM_EXE=%LocalAppData%\FiveM\FiveM.exe"
 if not exist "%FIVEM_EXE%" (
-  echo [FIVEM] WARN: FiveM.exe not found at: %FIVEM_EXE%
-  echo        Install/run FiveM once, then re-run.
-  endlocal & exit /b 0
+  echo [FIVEM] FiveM not found – skipping profile.
+  exit /b 0
 )
 
 :: Disable Fullscreen Optimizations (per-app)

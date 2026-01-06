@@ -5,8 +5,7 @@ call "%~dp0..\..\installer\common.bat" >nul
 echo [NETWORK] Applying balanced network tweaks...
 
 if /i not "%IS_ELEVATED%"=="True" (
-  echo [NETWORK] WARN: Not elevated. Skipping interface registry tweaks.
-  goto :qos
+  echo [NETWORK] Running without admin – interface tweaks skipped.
 )
 
 :: Apply TcpAckFrequency/TCPNoDelay on all interfaces (safe approach)

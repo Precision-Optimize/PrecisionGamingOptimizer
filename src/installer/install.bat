@@ -1,4 +1,9 @@
 @echo off
+echo Detected GPU Vendor: %GPU_VENDOR%
+echo Detected System Tier: %TIER%
+echo Windows Version: %WIN_VERSION%
+echo.
+
 setlocal EnableExtensions EnableDelayedExpansion
 
 set "ROOT=%~dp0.."
