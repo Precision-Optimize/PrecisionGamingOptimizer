@@ -1,5 +1,6 @@
 # PrecisionGamingOptimizer  
 ![Release](https://img.shields.io/badge/release-ULTIMATE%20FPS-red?style=for-the-badge)
+![Version](https://img.shields.io/github/v/release/USERNAME/REPO?style=flat-square)
 ![Platform](https://img.shields.io/badge/platform-Windows%2010%20%7C%2011-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/license-MIT-green?style=for-the-badge)
 
