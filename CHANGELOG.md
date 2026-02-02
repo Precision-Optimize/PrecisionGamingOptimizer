@@ -1,18 +1,64 @@
-# Changelog
+## 🚀 PrecisionGamingOptimizer v2.0.0 — ULTIMATE FPS MODE
 
-## [1.0.1] – Minor Stability Update
-### Improved
-- More reliable GPU auto-detection on systems with both iGPU and dGPU
-- Safer handling when FiveM or Fortnite is not installed
-- Cleaner console output with clearer detection summary
-- Minor script refactoring for readability and maintenance
+This release introduces the **most aggressive performance profile** in the PrecisionGamingOptimizer project, designed for players who want **maximum FPS and minimum latency** in competitive gaming environments.
 
-### Changed
-- No changes to optimization behavior
-- No new or aggressive tweaks introduced
+---
 
-### Fixed
-- Prevented false warnings when game executables are missing
+### 🔥 What’s New
+
+#### ⚙️ Ultimate System Optimization
+- Aggressive Windows performance tuning
+- GameDVR and background capture fully disabled
+- High Performance power plan enforced
+- CPU scheduling optimized for gaming workloads
+- Memory compression disabled when supported by the OS
+- Network QoS throttling disabled to reduce latency
+
+#### 🎮 Game Profiles
+- **FiveM – Ultimate FPS Profile**
+- **Fortnite – Ultimate FPS Profile**
+- High CPU priority applied per game
+- Fully reversible changes
+
+#### 🧠 Windows Build Awareness
+- Automatic detection of Windows 10 / Windows 11
+- Safe handling of Windows 11 24H2 memory management changes
+- No script crashes or fatal errors on unsupported features
+
+---
+
+### 🎯 Design Philosophy
+> Performance over power saving  
+> Stability over gimmicks  
+> Transparency over magic buttons  
+
+This release avoids registry spam and applies only **real optimizations used in competitive gaming scenarios**.
+
+---
+
+### 🔁 Revert & Safety
+- One-click revert for all changes
+- No permanent system modifications
+- Safe testing and rollback
+
+---
+
+### ⚠️ Important Notice
+ULTIMATE FPS MODE prioritizes performance over energy efficiency.  
+Recommended for **desktop PCs**. Laptop users should proceed with caution.
+
+---
+
+### 🔜 What’s Next
+- Stability patch (v2.0.1)
+- Optional Balanced ↔ Ultimate selector
+- GPU-specific aggressive presets
+- Additional game profiles
+
+---
+
+If this release improves your experience, please ⭐ star the repository and share feedback.
+
 
 ## [1.0.0] – 2025-12-29
 ### Added
